@@ -36,5 +36,5 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           tags: |
-            glapss/${{ github.repository }}:latest
-
+            glapss/docker-mycli:latest
+            ghcr.io/${{ github.repository }}:latest
