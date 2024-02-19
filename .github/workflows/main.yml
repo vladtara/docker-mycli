@@ -38,4 +38,3 @@ jobs:
           tags: |
             glapss/${{ github.repository }}:latest
 
-#ghcr.io/vladtara/${{ github.repository }}:latest
