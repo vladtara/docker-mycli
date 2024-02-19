@@ -9,7 +9,7 @@ mysql cli client
 ### 1. Clone repo and build docker image
 
 ```
-docker build -t mycli:latest .
+docker build -t docker-mycli:latest .
 ```
 
 ## Usage
@@ -17,7 +17,8 @@ docker build -t mycli:latest .
 ### 1. Run docker container
 
 ```
-docker run -it --rm mycli:latest
+docker run -it --rm ghcr.io/vladtara/docker-mycli:latest
+docker run -it --rm glapss/docker-mycli:latest
 ```
 
 ### 2. After this command, you'll see the next output
@@ -73,5 +74,8 @@ Options:
   ### 3. That means you need to put just arguments for example
 
   ```
-  docker run -it --rm mycli:latest -h mysql.example.db -u test_user -D test_DB 
+  docker run -it --rm ghcr.io/vladtara/docker-mycli:latest \
+    -h mysql.example.db \
+    -u test_user \
+    -D test_DB 
   ```
