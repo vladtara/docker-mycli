@@ -15,14 +15,12 @@ docker build -t docker-mycli:latest .
 ## Usage
 
 ### 1. Run docker container
-
 ```
 docker run -it --rm ghcr.io/vladtara/docker-mycli:latest
 docker run -it --rm glapss/docker-mycli:latest
 ```
 
 ### 2. After this command, you'll see the next output
-
 ```
 Usage: mycli [OPTIONS] [DATABASE]
 
@@ -71,11 +69,16 @@ Options:
   --help                        Show this message and exit.
   ```
 
-  ### 3. That means you need to put just arguments for example
-
+### 3. That means you need to put just arguments for example:
   ```
   docker run -it --rm ghcr.io/vladtara/docker-mycli:latest \
     -h mysql.example.db \
     -u test_user \
     -D test_DB 
   ```
+
+
+### Build versions
+ * amd64
+ * arm64/v8
+ * arm/v7
