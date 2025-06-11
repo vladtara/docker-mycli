@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:stable-slim
 
 RUN apt-get update &&\
     apt-get install mycli curl -y &&\

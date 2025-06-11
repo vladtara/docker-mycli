@@ -3,6 +3,8 @@ name: Build and push
 on:
   push:
     branches: [master]
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -36,5 +38,5 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           tags: |
-            glapss/docker-mycli:latest
-            ghcr.io/${{ github.repository }}:latest
+            glapss/docker-mycli:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}:${{ github.ref_name }}
