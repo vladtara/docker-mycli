@@ -33,3 +33,4 @@ jobs:
           platforms: linux/amd64
           tags: |
             ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}:latest
